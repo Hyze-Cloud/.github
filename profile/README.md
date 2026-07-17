@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./hyze-banner.png" alt="Hyze Cloud" width="100%" />
+
 # Hyze Cloud
 
 **Infraestrutura cloud, sem fricção.**
