@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./hyze-banner.png" alt="Hyze Cloud" width="100%" />
+  <img src="./hyze-logo.png" alt="Hyze Cloud" width="360" />
 </div>
 
 <br />
