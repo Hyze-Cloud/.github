@@ -43,23 +43,48 @@ Plataforma de cloud hosting para times e desenvolvedores que querem **subir, esc
 | Repositório | Descrição |
 | :--- | :--- |
 | [`hyzecloud-sdk-ts`](https://github.com/Hyze-Cloud/hyzecloud-sdk-ts) | SDK oficial TypeScript / Node / Bun |
+| [`hyzecloud-sdk-python`](https://github.com/Hyze-Cloud/hyzecloud-sdk-python) | SDK oficial Python — cliente sync e async |
+| [`hyzecloud-docs`](https://github.com/Hyze-Cloud/hyzecloud-docs) | Documentação — referência da API, guias e SDKs |
 
 ---
 
 ### Comece em minutos
 
+**SDK TypeScript / Node / Bun**
+
 ```bash
-npm install @hyzecloud/sdk
+npm install @hyze-cloud/sdk
 ```
 
 ```ts
-import { HyzeCloud } from "@hyzecloud/sdk";
+import { HyzeCloud } from "@hyze-cloud/sdk";
 
 const hyze = new HyzeCloud({
   apiKey: process.env.HYZE_API_KEY,
 });
 
 const { apps } = await hyze.apps.list();
+```
+
+**SDK Python**
+
+```bash
+pip install hyze-cloud
+```
+
+```python
+from hyzecloud import HyzeCloud
+
+client = HyzeCloud()  # lê HYZE_API_KEY
+
+apps = client.apps.list()["apps"]
+```
+
+**CLI**
+
+```bash
+npm install -g @hyze-cloud/cli
+hyze login
 ```
 
 Mais detalhes na [documentação](https://docs.hyzecloud.app).
